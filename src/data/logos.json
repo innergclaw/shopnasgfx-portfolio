@@ -1,5 +1,41 @@
 [
   {
+    "id": "honey-and-friends-badge",
+    "business": "Honey & Friends Events",
+    "whatTheyDo": "",
+    "year": "",
+    "designNotes": "",
+    "image": "./logos/honey-and-friends-badge.png",
+    "source": "Provided by Mr G in chat, 2026-10-16"
+  },
+  {
+    "id": "honey-and-friends-horizontal",
+    "business": "Honey & Friends Events",
+    "whatTheyDo": "",
+    "year": "",
+    "designNotes": "",
+    "image": "./logos/honey-and-friends-horizontal.png",
+    "source": "Provided by Mr G in chat, 2026-10-16"
+  },
+  {
+    "id": "honey-and-friends-monogram",
+    "business": "Honey & Friends Events",
+    "whatTheyDo": "",
+    "year": "",
+    "designNotes": "",
+    "image": "./logos/honey-and-friends-monogram.png",
+    "source": "Provided by Mr G in chat, 2026-10-16"
+  },
+  {
+    "id": "honey-and-friends-stacked",
+    "business": "Honey & Friends Events",
+    "whatTheyDo": "",
+    "year": "",
+    "designNotes": "",
+    "image": "./logos/honey-and-friends-stacked.png",
+    "source": "Provided by Mr G in chat, 2026-10-16"
+  },
+  {
     "id": "10-for-10-boxing-black",
     "business": "10 for 10 Boxing",
     "whatTheyDo": "Boxing gym/club in Philadelphia, PA",
