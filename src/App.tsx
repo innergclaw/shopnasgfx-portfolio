@@ -63,12 +63,17 @@ export default function App() {
                 const moved = d ? Math.hypot(e.clientX - d.x, e.clientY - d.y) > 6 : false
                 if (!moved && !isMoving) setSelected(logo)
               }}
-              className={`absolute inset-3 flex items-center justify-center rounded-2xl border p-6 transition-shadow hover:shadow-[0_6px_24px_-12px_rgba(60,45,30,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-400 ${
+              className={`absolute inset-3 flex items-center justify-center flex-col gap-2 rounded-2xl border p-5 transition-shadow hover:shadow-[0_6px_24px_-12px_rgba(60,45,30,0.35)] focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-400 ${
                 light ? "border-stone-700/40 bg-[#2b2724]" : "border-stone-200/80 bg-[#fbf8f3]"
               }`}
-              aria-label={`${logo.business} logo`}
+              aria-label={`${logo.business || "To be confirmed"} logo`}
             >
-              <img src={logo.image} alt={logo.business} draggable={false} className="pointer-events-none max-h-full max-w-full object-contain" />
+              <div className="flex min-h-0 w-full flex-1 items-center justify-center">
+                <img src={logo.image} alt={logo.business || "Logo, business to be confirmed"} loading="lazy" draggable={false} className="pointer-events-none h-full w-full rounded-lg object-contain" />
+              </div>
+              <span className={`w-full truncate text-center text-[11px] tracking-wide ${light ? "text-stone-300" : logo.business ? "text-stone-600" : "italic text-stone-400"}`}>
+                {logo.business || "To be confirmed"}
+              </span>
             </motion.button>
           )
         }}
@@ -91,7 +96,7 @@ export default function App() {
             <motion.div
               role="dialog"
               aria-modal="true"
-              aria-label={selected.business}
+              aria-label={selected.business || "To be confirmed"}
               initial={{ y: 24, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 16, opacity: 0 }}
@@ -100,7 +105,7 @@ export default function App() {
               className="w-full max-w-md overflow-hidden rounded-3xl border border-stone-200 bg-[#fdfbf7] shadow-[0_20px_60px_-24px_rgba(60,45,30,0.45)]"
             >
               <div className={`flex h-48 items-center justify-center p-8 ${isLight(selected) ? "bg-[#2b2724]" : "bg-[#f3ede3]"}`}>
-                <img src={selected.image} alt={selected.business} className="max-h-full max-w-full object-contain" />
+                <img src={selected.image} alt={selected.business || "Logo, business to be confirmed"} className="max-h-full max-w-full object-contain" />
               </div>
               <dl className="space-y-4 p-6">
                 <Field label="Business" value={selected.business} />
