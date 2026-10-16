@@ -1,0 +1,29 @@
+[
+  {
+    "id": "10-for-10-boxing-black",
+    "business": "10 for 10 Boxing",
+    "whatTheyDo": "Boxing gym/club in Philadelphia, PA",
+    "year": "",
+    "designNotes": "Black vector trace, transparent background; lettering and illustration outlined as paths. Part of logo kit revision 2026-09-15 (black and white versions).",
+    "image": "./logos/10-for-10-boxing-black.svg",
+    "source": "github:innergclaw/ownyourweb-client-projects shopnasgfx/10for10-boxing/files/editable-svg/10-FOR-10-Black.svg (SVG <title>/<desc>; sha256 matches manifest.json); PROJECT.md; github.com/innergclaw/10for10-boxing repo description 'Philadelphia Boxing Gym'"
+  },
+  {
+    "id": "10-for-10-boxing-white",
+    "business": "10 for 10 Boxing",
+    "whatTheyDo": "Boxing gym/club in Philadelphia, PA",
+    "year": "",
+    "designNotes": "White vector version for dark backgrounds, transparent canvas. Logo kit revision 2026-09-15.",
+    "image": "./logos/10-for-10-boxing-white.svg",
+    "source": "github:innergclaw/ownyourweb-client-projects shopnasgfx/10for10-boxing/files/editable-svg/10-FOR-10-White.svg; manifest.json; github.com/innergclaw/10for10-boxing"
+  },
+  {
+    "id": "10-for-10-boxing-black-website-png",
+    "business": "10 for 10 Boxing",
+    "whatTheyDo": "Boxing gym in Philadelphia",
+    "year": "",
+    "designNotes": "",
+    "image": "./logos/10-for-10-boxing-logo-black-website.png",
+    "source": "https://raw.githubusercontent.com/innergclaw/10for10-boxing/main/10-for-10-logo-black.png (public client website repo)"
+  }
+]
