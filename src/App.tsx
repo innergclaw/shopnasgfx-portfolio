@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { motion, AnimatePresence } from "motion/react"
 import { InfiniteGrid } from "@/components/ui/infinite-grid"
+import { Hero, Services, HowSI, Showcase, Intake } from "@/sections/Sections"
 import logosData from "@/data/logos.json"
 
 interface Logo {
@@ -45,7 +46,9 @@ export default function App() {
   }, [])
 
   return (
-    <main className="fixed inset-0 bg-[#f6f1e9] text-stone-800">
+    <main className="min-h-screen bg-[#f6f1e9] text-stone-800">
+      <Hero />
+      <section id="work" className="relative h-[70svh] border-y border-stone-200" aria-label="Logo portfolio">
       <InfiniteGrid
         gridSize={gridSize}
         renderItem={({ gridIndex, isMoving }) => {
@@ -79,10 +82,15 @@ export default function App() {
         }}
       />
 
-      <header className="pointer-events-none absolute left-4 top-4 z-10 rounded-2xl bg-[#f6f1e9]/90 px-4 py-3 backdrop-blur-sm sm:left-6 sm:top-6">
-        <h1 className="text-[13px] font-semibold tracking-[0.32em] text-stone-800">SHOPNASGFX</h1>
-        <p className="mt-1 text-[12px] text-stone-500">Logo work by Nasirr Mayo</p>
-      </header>
+      <div className="pointer-events-none absolute left-4 top-4 z-10 rounded-2xl bg-[#f6f1e9]/90 px-4 py-3 backdrop-blur-sm">
+        <p className="text-[13px] font-semibold tracking-[0.32em] text-stone-800">SHOPNASGFX</p>
+        <p className="mt-1 text-[12px] text-stone-500">Logo work by Nasirr Mayo, drag to explore</p>
+      </div>
+      </section>
+      <Services />
+      <HowSI />
+      <Showcase />
+      <Intake />
 
       <AnimatePresence>
         {selected && (
